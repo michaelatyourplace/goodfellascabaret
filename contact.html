@@ -36,6 +36,35 @@
         }
     </style>
 </head>
+
+<nav class="space-x-4 hidden md:flex">
+    <a href="index.html" class="text-gray-300 hover:text-gray-50 font-medium transition-colors">Home</a>
+    <a href="about.html" class="text-gray-300 hover:text-gray-50 font-medium transition-colors">About</a>
+    <div class="relative group">
+        <button id="dropdown-toggle" class="text-indigo-400 font-bold transition-colors hover:text-indigo-200 focus:outline-none">
+            Learn
+            <svg class="w-4 h-4 inline-block ml-1 -mt-1 transform group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+        </button>
+        <div id="dropdown-menu" class="dropdown-menu absolute left-0 mt-2 w-48 bg-gray-800 rounded-md shadow-lg z-10 transition-all duration-300 transform opacity-0 scale-95 origin-top-left group-hover:opacity-100 group-hover:scale-100">
+            <a href="./learn/how-to-be-a-stripper.html" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 rounded-md">How to be an Entertainer</a>
+        </div>
+    </div>
+    <div class="relative group">
+        <button id="dropdown-toggle" class="text-indigo-400 font-bold transition-colors hover:text-indigo-200 focus:outline-none">
+            Strip Clubs
+            <svg class="w-4 h-4 inline-block ml-1 -mt-1 transform group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+        </button>
+        <div id="dropdown-menu" class="dropdown-menu absolute left-0 mt-2 w-48 bg-gray-800 rounded-md shadow-lg z-10 transition-all duration-300 transform opacity-0 scale-95 origin-top-left group-hover:opacity-100 group-hover:scale-100">
+            <a href="./strip-clubs/why-we-go-to-cabarets.html" class="block px-4 py-2 text-indigo-400 hover:text-white hover:bg-gray-700 rounded-md">Why Visit a Cabaret</a>
+        </div>
+    </div>
+    <a href="contact.html" class="text-gray-300 hover:text-gray-50 font-medium transition-colors">Contact</a>
+</nav>
+
 <body class="bg-dark text-white">
 
     <main class="contact-section">
