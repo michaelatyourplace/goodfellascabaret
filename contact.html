@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Goodfellas Cabaret</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .contact-section {
+            padding: 60px 0;
+        }
+        .info-box {
+            background: #212529; /* Dark background for info */
+            color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .info-box i {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #ffc107; /* Highlight color for icons */
+        }
+        .form-control {
+            background-color: #343a40; /* Darker input fields */
+            color: #fff;
+            border: 1px solid #495057;
+        }
+        .form-control:focus {
+            background-color: #343a40;
+            color: #fff;
+            border-color: #ffc107;
+            box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25);
+        }
+    </style>
+</head>
+
+<nav class="space-x-4 hidden md:flex">
+    <a href="index.html" class="text-gray-300 hover:text-gray-50 font-medium transition-colors">Home</a>
+    <a href="about.html" class="text-gray-300 hover:text-gray-50 font-medium transition-colors">About</a>
+    <div class="relative group">
+        <button id="dropdown-toggle" class="text-indigo-400 font-bold transition-colors hover:text-indigo-200 focus:outline-none">
+            Learn
+            <svg class="w-4 h-4 inline-block ml-1 -mt-1 transform group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+        </button>
+        <div id="dropdown-menu" class="dropdown-menu absolute left-0 mt-2 w-48 bg-gray-800 rounded-md shadow-lg z-10 transition-all duration-300 transform opacity-0 scale-95 origin-top-left group-hover:opacity-100 group-hover:scale-100">
+            <a href="./learn/how-to-be-a-stripper.html" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 rounded-md">How to be an Entertainer</a>
+        </div>
+    </div>
+    <div class="relative group">
+        <button id="dropdown-toggle" class="text-indigo-400 font-bold transition-colors hover:text-indigo-200 focus:outline-none">
+            Strip Clubs
+            <svg class="w-4 h-4 inline-block ml-1 -mt-1 transform group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+        </button>
+        <div id="dropdown-menu" class="dropdown-menu absolute left-0 mt-2 w-48 bg-gray-800 rounded-md shadow-lg z-10 transition-all duration-300 transform opacity-0 scale-95 origin-top-left group-hover:opacity-100 group-hover:scale-100">
+            <a href="./strip-clubs/why-we-go-to-cabarets.html" class="block px-4 py-2 text-indigo-400 hover:text-white hover:bg-gray-700 rounded-md">Why Visit a Cabaret</a>
+        </div>
+    </div>
+    <a href="contact.html" class="text-gray-300 hover:text-gray-50 font-medium transition-colors">Contact</a>
+</nav>
+
+<body class="bg-dark text-white">
+
+    <main class="contact-section">
+        <div class="container">
+            <h1 class="text-center text-warning mb-5">Contact Goodfellas Cabaret</h1>
+            <p class="text-center mb-5">
+                Ready to experience the best? Get in touch with us for bookings, inquiries, or any questions you may have.
+            </p>
+
+            <div class="row">
+                <div class="col-lg-7 mb-4">
+                    <div class="p-4 bg-dark border rounded">
+                        <h3 class="mb-4">Send Us a Message</h3>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-warning w-100">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="info-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Our Location</h4>
+                        <p>123 Goodfellas Blvd, Metropolis, USA 12345</p>
+                    </div>
+                    <div class="info-box">
+                        <i class="fas fa-phone"></i>
+                        <h4>Call Us</h4>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    <div class="info-box">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email Us</h4>
+                        <p>info@goodfellascabaret.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-5 border-warning">
+
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center text-warning mb-4">Find Us on the Map</h2>
+                    <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-74.005972!3d40.712776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDQ5JzQ1LjUiTiA3NMKwMDAnMzUuOSJF!5e0!3m2!1sen!2sus!4v1698822558590"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

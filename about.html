@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Cabaret</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fc;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-gray-900 shadow-sm py-4">
+        <div class="container mx-auto flex justify-between items-center px-6 md:px-12">
+            <div class="text-2xl font-bold text-gray-50">
+                <a href="index.html">Cabaret</a>
+            </div>
+            <nav class="space-x-4 hidden md:flex">
+                <a href="index.html" class="text-gray-300 hover:text-gray-50 font-medium transition-colors">Home</a>
+                <a href="about.html" class="text-gray-300 hover:text-gray-50 font-medium transition-colors">About</a>
+                <div class="relative group">
+                    <button id="dropdown-toggle" class="text-indigo-400 font-bold transition-colors hover:text-indigo-200 focus:outline-none">
+                        Learn
+                        <svg class="w-4 h-4 inline-block ml-1 -mt-1 transform group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="dropdown-menu" class="dropdown-menu absolute left-0 mt-2 w-48 bg-gray-800 rounded-md shadow-lg z-10 transition-all duration-300 transform opacity-0 scale-95 origin-top-left group-hover:opacity-100 group-hover:scale-100">
+                        <a href="./learn/how-to-be-a-stripper.html" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 rounded-md">How to be an Entertainer</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <button id="dropdown-toggle" class="text-indigo-400 font-bold transition-colors hover:text-indigo-200 focus:outline-none">
+                        Strip Clubs
+                        <svg class="w-4 h-4 inline-block ml-1 -mt-1 transform group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="dropdown-menu" class="dropdown-menu absolute left-0 mt-2 w-48 bg-gray-800 rounded-md shadow-lg z-10 transition-all duration-300 transform opacity-0 scale-95 origin-top-left group-hover:opacity-100 group-hover:scale-100">
+                        <a href="./strip-clubs/why-we-go-to-cabarets.html" class="block px-4 py-2 text-indigo-400 hover:text-white hover:bg-gray-700 rounded-md">Why Visit a Cabaret</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="text-gray-300 hover:text-gray-50 font-medium transition-colors">Contact</a>
+            </nav>
+            <a href="#booking" class="md:hidden p-2 text-indigo-400 hover:text-indigo-200 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-800 text-white py-24 md:py-32">
+        <div class="container mx-auto text-center px-6 md:px-12">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4">
+                Our Mission: Information and Entertainment
+            </h1>
+            <p class="text-lg sm:text-xl md:text-2xl font-light mb-8 max-w-2xl mx-auto">
+                Discover the purpose behind our platform and our commitment to the entertainment community.
+            </p>
+        </div>
+    </section>
+
+    <!-- About Content Section -->
+    <section class="py-16 md:py-24">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="text-gray-600 leading-relaxed">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+                        A Platform for Professionalism
+                    </h2>
+                    <p class="mb-6">
+                        This website serves as a commercial and informational platform dedicated to the adult entertainment industry. Our primary goal is to provide a central hub for professional entertainers and clients, offering comprehensive resources and booking services. We believe in fostering a community built on respect, safety, and mutual understanding.
+                    </p>
+                    <p class="mb-6">
+                        As an informational resource, we provide insights into the industry, from the professionalism of the entertainers to the proper etiquette for guests. We aim to educate our audience and challenge preconceived notions by highlighting the dedication, skill, and artistry that go into every performance. Our content is designed to be a transparent and reliable source for anyone interested in the world of professional entertainment.
+                    </p>
+                    <p class="mb-6">
+                        Commercially, our site facilitates the connection between talented performers and those seeking high-quality entertainment for various events. We provide a streamlined booking process and a secure environment for all transactions. Our commitment to professionalism ensures that both clients and entertainers have a positive and respectful experience.
+                    </p>
+                </div>
+                <div class="md:w-full">
+                    <img src="https://placehold.co/800x600/6366f1/ffffff?text=Professionalism+and+Information" alt="Professionalism and Information" class="rounded-xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-gray-800 text-white py-16">
+        <div class="container mx-auto text-center px-6 md:px-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Connect?</h2>
+            <p class="text-lg md:text-xl font-light mb-8 max-w-2xl mx-auto">
+                Visit our contact page to learn more about our services or to connect with us.
+            </p>
+            <a href="contact.html" class="bg-indigo-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-700 transition-colors transform hover:scale-105 inline-block">
+                Contact Us
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 md:px-12 text-center">
+            <p>&copy; 2024 Goodfellas Cabaret. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

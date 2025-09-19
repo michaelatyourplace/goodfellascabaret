@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Cabaret</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fc;
+        }
+        .dropdown-menu {
+            display: none;
+        }
+        .dropdown-menu.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-gray-900 shadow-sm py-4">
+        <div class="container mx-auto flex justify-between items-center px-6 md:px-12">
+            <div class="text-2xl font-bold text-gray-50">
+                <a href="index.html">Cabaret</a>
+            </div>
+            <nav class="space-x-4 hidden md:flex">
+                <a href="index.html" class="text-gray-300 hover:text-gray-50 font-medium transition-colors">Home</a>
+                <a href="about.html" class="text-gray-300 hover:text-gray-50 font-medium transition-colors">About</a>
+                <div class="relative group">
+                    <button id="dropdown-toggle" class="text-indigo-400 font-bold transition-colors hover:text-indigo-200 focus:outline-none">
+                        Learn
+                        <svg class="w-4 h-4 inline-block ml-1 -mt-1 transform group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="dropdown-menu" class="dropdown-menu absolute left-0 mt-2 w-48 bg-gray-800 rounded-md shadow-lg z-10 transition-all duration-300 transform opacity-0 scale-95 origin-top-left group-hover:opacity-100 group-hover:scale-100">
+                        <a href="./learn/how-to-be-a-stripper.html" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 rounded-md">How to be an Entertainer</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <button id="dropdown-toggle" class="text-indigo-400 font-bold transition-colors hover:text-indigo-200 focus:outline-none">
+                        Strip Clubs
+                        <svg class="w-4 h-4 inline-block ml-1 -mt-1 transform group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="dropdown-menu" class="dropdown-menu absolute left-0 mt-2 w-48 bg-gray-800 rounded-md shadow-lg z-10 transition-all duration-300 transform opacity-0 scale-95 origin-top-left group-hover:opacity-100 group-hover:scale-100">
+                        <a href="./strip-clubs/why-we-go-to-cabarets.html" class="block px-4 py-2 text-indigo-400 hover:text-white hover:bg-gray-700 rounded-md">Why Visit a Cabaret</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="text-gray-300 hover:text-gray-50 font-medium transition-colors">Contact</a>
+            </nav>
+            <a href="#booking" class="md:hidden p-2 text-indigo-400 hover:text-indigo-200 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-800 text-white py-24 md:py-32">
+        <div class="container mx-auto text-center px-6 md:px-12">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4">
+                Get in Touch
+            </h1>
+            <p class="text-lg sm:text-xl md:text-2xl font-light mb-8 max-w-2xl mx-auto">
+                We are a commercial and informational resource. If you have any inquiries, please use the form below to contact us.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-16 md:py-24">
+        <div class="container mx-auto px-6 md:px-12 max-w-3xl">
+            <div class="bg-white rounded-xl shadow-2xl p-8 md:p-12">
+                <h3 class="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-8">
+                    Contact Form
+                </h3>
+                <form action="#" method="POST" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                        <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                        <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea id="message" name="message" rows="6" class="mt-1 block w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 md:px-12 text-center">
+            <p>&copy; 2024 Cabaret. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const dropdownToggle = document.getElementById('dropdown-toggle');
+        const dropdownMenu = document.getElementById('dropdown-menu');
+
+        dropdownToggle.addEventListener('click', () => {
+            dropdownMenu.classList.toggle('active');
+        });
+
+        // Close the dropdown when clicking outside of it
+        document.addEventListener('click', (event) => {
+            if (!dropdownToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                if (dropdownMenu.classList.contains('active')) {
+                    dropdownMenu.classList.remove('active');
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
